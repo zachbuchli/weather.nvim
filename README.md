@@ -3,6 +3,9 @@
 I totally stole most of the code for this plugin from [here](https://github.com/chipsenkbeil/neovimconf-2024-talk).
 
 
+![Demo screenshot]()
+
+
 ## Installation
 
 
