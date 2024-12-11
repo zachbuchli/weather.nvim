@@ -1,5 +1,4 @@
 vim.api.nvim_create_user_command('Weather', function(opts)
-  print(vim.inspect(opts))
   local location = opts.fargs[1]
   require('weather').show(location)
 end, {
