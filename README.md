@@ -1,9 +1,9 @@
 # Display the weather in Neovim!
 
+![Demo screenshot](https://github.com/zachbuchli/weather.nvim/blob/main/assets/hero-shot.png)
+
+
 I totally stole most of the code for this plugin from [here](https://github.com/chipsenkbeil/neovimconf-2024-talk).
-
-
-![Demo screenshot]()
 
 
 ## Installation
