@@ -11,6 +11,8 @@ I totally stole most of the code for this plugin from [here](https://github.com/
 { 'zachbuchli/weather.nvim' },
 ```
 
+You can then verify installation was successfull with `:checkhealth weather`
+
 
 ## Disclaimer
 
