@@ -3,7 +3,7 @@ local M = {}
 -- setup sets up default values for this plugin.
 function M.setup(opts)
   opts = opts or {}
-  M.default_location = opts.default_location or 'portland'
+  M.default_location = opts.default_location
 end
 
 ---Open a floating window used to display top.
@@ -11,7 +11,7 @@ end
 ---@param opts? {win?:integer}
 function M.show(location, opts)
   opts = opts or {}
-  location = location or M.default_location
+  location = location or M.default_location or 'portland'
 
   -- Create an immutable scratch buffer that is wiped once hidden
   local buf = vim.api.nvim_create_buf(false, true)
