@@ -1,11 +1,16 @@
 local M = {}
 
+M.setup = function(opts)
+  opts = opts or {}
+  M.default_location = opts.default_location
+end
+
 ---Open a floating window used to display top.
+---@param location? string
 ---@param opts? {win?:integer}
----@param location string
 function M.show(location, opts)
   opts = opts or {}
-  location = location or 'portland'
+  location = location or M.default_location or 'portland'
 
   -- Create an immutable scratch buffer that is wiped once hidden
   local buf = vim.api.nvim_create_buf(false, true)
