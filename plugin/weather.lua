@@ -1,10 +1,7 @@
 vim.api.nvim_create_user_command('Weather', function(opts)
-  local location
-  if string.len(opts.fargs) > 0 then
-    location = opts.fargs[1]
-  end
+  local location = opts.fargs[1]
   require('weather').show(location)
 end, {
-  nargs = '*',
-  desc = 'Show the weather!',
+  nargs = '?',
+  desc = ':Weather <location?>  Show the weather from https://wttr.in',
 })
