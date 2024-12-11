@@ -13,9 +13,9 @@ I totally stole most of the code for this plugin from [here](https://github.com/
 ```lua
 {
     'zachbuchli/weather.nvim',
-    opts = { default_location = 'dayton' },
     config = function()
       local weather = require 'weather'
+      weather.setup({ default_location = 'dayton' })
       vim.keymap.set('n', '<leader>w', weather.show)
     end,
   },

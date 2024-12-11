@@ -1,6 +1,7 @@
 local M = {}
 
-M.setup = function(opts)
+-- setup sets up default values for this plugin.
+function M.setup(opts)
   opts = opts or {}
   M.default_location = opts.default_location or 'portland'
 end
